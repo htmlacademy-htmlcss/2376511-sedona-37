@@ -68,8 +68,9 @@ body {
 .hero-container {
   width: 1200px;
   height: 458px;
-  background-image: url(../images/decorimages/herobackground.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/decor/herobackgroundpattern.svg), url(../images/decor/herobackground.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
 }
 
 .background-img {
@@ -196,7 +197,7 @@ body {
 /* Subscribe-index */
 
 .subsc-index {
-  background-image: url(../images/decorimages/subscribe.jpg);
+  background-image: url(../images/decor/subscribe.jpg);
   background-repeat: no-repeat;
   width: 1200px;
   height: 414.86px;
@@ -240,7 +241,7 @@ body {
 /* Filter */
 
 .hotel-selection {
-  background-image: url(../images/decorimages/filterbackground.jpg);
+  background-image: url(../images/decor/filterbackground.jpg);
   color: #ffffff;
   background-repeat: no-repeat;
   width: 1200px;
@@ -254,14 +255,14 @@ body {
 }
 
 .home-icon {
-  background-image: url(../images/decorimages/breadcrubsIcon1.svg);
+  background-image: url(../images/decor/breadcrubs1.svg);
   background-repeat: no-repeat;
   width: 12px;
   height: 12px;
 }
 
 .icon-next {
-  background-image: url(../images/decorimages/breadcrubsIcon2.svg);
+  background-image: url(../images/decor/breadcrubs2.svg);
   background-repeat: no-repeat;
   width: 6.39px;
   height: 9.94px;
@@ -301,21 +302,21 @@ body {
 }
 
 .card-view-button-grid {
-  background-image: url(../images/decorimages/cardViewGrid.svg);
+  background-image: url(../images/decor/cardviewgrid.svg);
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
 
 .card-view-button-textUnder {
-  background-image: url(../images/decorimages/cardViewTextUnder.svg);
+  background-image: url(../images/decor/cardviewtextunder.svg);
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
 }
 
 .card-view-button-list {
-  background-image: url(../images/decorimages/cardViewList.svg);
+  background-image: url(../images/decor/cardviewlist.svg);
   background-repeat: no-repeat;
   width: 48px;
   height: 48px;
