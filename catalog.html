@@ -11,6 +11,7 @@
 
     <!-- Header -->
 
+    <div class="body-container">
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -41,7 +42,7 @@
             </button>
           </li>
           <li class="navigation-item">
-            <button type="button" class="wish-button">Хочу Сюда
+            <button type="button" class="button wish-button">Хочу Сюда
               <span class="visually-hidden">Подать заявку</span>
             </button>
           </li>
@@ -56,7 +57,7 @@
         <h1 class="hotel-selection-header">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link home-icon" href="index.html">
               <div class="home-icon"></div>
               <div class="icon-next"></div>
               <span class="visually-hidden">Возврат на главную</span>
@@ -66,7 +67,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ol>
-        <form action="https://echo.htmlacademy.ru/" method="get">
+        <form class="filter-container" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="infrastructure">
             <legend class="filter-header">Инфраструктура:</legend>
             <label class="filter-item"><input type="checkbox" name="hotel-feature" checked value="pool">Бассейн</label>
@@ -87,10 +88,11 @@
             <label class="filter-item price-value"><input type="text" placeholder="от" value="0"></label>
             <label class="filter-item price-value"><input type="text" placeholder="до" value="9000"></label>
           </fieldset>
-          <button type="submit" class="submit-button">Применить</button>
-          <button type="reset" class="reset-button">Сбросить</button>
+          <button type="button submit" class="button submit-button">Применить</button>
+          <button type="button reset" class="button reset-button">Сбросить</button>
         </form>
       </section>
+
       <section class="results">
         <div class="controls">
           <span class="search-result">найдено гостиниц:38</span>
@@ -130,8 +132,8 @@
               <span class="hotel-price-name">Гостиница</span>
               <span class="hotel-price-value">от 4000 ₽</span>
             </p>
-            <button class="detail-button" type="button">Подробнее</button>
-            <button class="favorite-button" type="button">В избранное</button>
+            <button class="button detail-button" type="button">Подробнее</button>
+            <button class="button favorite-button" type="button">В избранное</button>
             <p class="rating">
               <span class="rating-img visually-hidden">Звездность отеля</span>
               <span class="rating-value">рейтинг 8,5</span>
@@ -147,8 +149,8 @@
               <span class="hotel-price-name">Гостиница</span>
               <span class="hotel-price-value">От 5000 ₽</span>
             </p>
-            <button class="detail-button" type="button">Подробнее</button>
-            <button class="favorite-button added" type="button">В избранное</button>
+            <button class="button detail-button" type="button">Подробнее</button>
+            <button class="button favorite-button added" type="button">В избранное</button>
             <p class="rating">
               <span class="rating-img visually-hidden">Звездность отеля</span>
               <span class="rating-value">рейтинг 9,2</span>
@@ -164,8 +166,8 @@
               <span class="hotel-price-name">Гостиница</span>
               <span class="hotel-price-value">От 2500 ₽</span>
             </p>
-            <button class="detail-button" type="button">Подробнее</button>
-            <button class="favorite-button" type="button">В избранное</button>
+            <button class="button detail-button" type="button">Подробнее</button>
+            <button class="button favorite-button" type="button">В избранное</button>
             <p class="rating">
               <span class="rating-img visually-hidden">Звездность отеля</span>
               <span class="rating-value">рейтинг 6,9</span>
@@ -181,8 +183,8 @@
               <span class="hotel-price-name">Гостиница</span>
               <span class="hotel-price-value">От 1500 ₽</span>
             </p>
-            <button class="detail-button" type="button">Подробнее</button>
-            <button class="favorite-button" type="button">В избранное</button>
+            <button class="button detail-button" type="button">Подробнее</button>
+            <button class="button favorite-button" type="button">В избранное</button>
             <p class="rating">
               <span class="rating-img visually-hidden">Звездность отеля</span>
               <span class="rating-value">рейтинг 5,0</span>
@@ -193,8 +195,8 @@
         <!-- Pagination -->
 
         <ol class="pagination">
-          <li class="pagination-item pagination-current">
-            <a class="pagination-link">1</a>
+          <li class="pagination-item current-background">
+            <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -205,8 +207,8 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
-            <button class="pagination-link" type="button">
+          <li class="pagination-item more-background">
+            <button class="pagination-link " type="button">
               <span class="visually-hidden">Показать еще</span>...</button>
           </li>
           <li class="pagination-item" value="10">
@@ -217,12 +219,12 @@
 
       <!-- Subscribe -->
 
-      <div class="subsc-catalog">
+      <div class="subscribe subsc-catalog">
         <h2 class="subsc-header"> Подпишитесь на рассылку</h2>
         <p class="subsc-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input type="text" name="email" placeholder="Ваш e-mail">
-          <button class="subscbutton" type="submit">Подписаться</button>
+          <button class="button subsc-button" type="submit">Подписаться</button>
         </form>
       </div>
     </main>
@@ -261,6 +263,7 @@
         </div>
       </div>
     </footer>
+    </div>
   </body>
 
 </html>
