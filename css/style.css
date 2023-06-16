@@ -27,6 +27,12 @@ body {
   height:100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .body-container {
   width: 1200px;
   color: #000000;
@@ -80,6 +86,13 @@ border: none;
   text-decoration: none;
 }
 
+.wish-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+}
+
 /* Footer */
 
 .footer-container {
@@ -114,13 +127,6 @@ border: none;
   overflow: hidden;
 }
 
-.wish-button {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756157;
-}
-
 /* Index-page Hero */
 
 .hero-container {
@@ -142,8 +148,7 @@ border: none;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  box-sizing: border-box;
-  padding: 69px 290px 25px 290px;
+  padding: 90px 290px 25px 290px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -200,22 +205,23 @@ border: none;
 
 /* Index-page Promo */
 
+.promo-header-container {
+  margin: 64px 347.5px;
+  text-align: center;
+}
+
 .promo-header {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  box-sizing: border-box;
-  padding: 64px 347.5px 20px 347.5px;
+  padding-bottom: 20px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .subtitle {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 64px;
-  text-align: center;
   color: #333333;
 }
 
@@ -315,7 +321,6 @@ border: none;
   width: 1200px;
   height: 414.86px;
   text-align: center;
-  box-sizing: border-box;
   padding: 96px 258px 104px;
 }
 
@@ -351,7 +356,7 @@ border: none;
   width: 1200px;
   height: 412px;
   margin-bottom: 50px;
-  box-sizing: border-box;
+
   padding: 35px 70px 70px;
 }
 
@@ -446,6 +451,7 @@ border: none;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .select-control {
