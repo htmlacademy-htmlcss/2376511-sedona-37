@@ -620,8 +620,8 @@ body {
   background-repeat: no-repeat;
   background-color: #82B3D3;
   background-size: cover;
-  width: 1200px;
-  height: 412px;
+  min-width: 1200px;
+  min-height: 412px;
   margin-bottom: 40px;
   padding: 35px 70px 70px;
 }
@@ -667,7 +667,7 @@ body {
   opacity: 0.3;
 }
 
-.breadcrumbs-item::after {
+.breadcrumbs-item-after::after {
   position: absolute;
   content: '';
   background-image: url(../images/decor/breadcrubs2.svg);
@@ -801,6 +801,10 @@ body {
 }
 
 /* Catalog-page Results */
+.results {
+  padding-left: 70px;
+  padding-right: 70px;
+}
 
 .controls {
   width: 1060px;
@@ -810,23 +814,20 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
-  margin-right: 70px;
   margin-bottom: 40px;
 }
 
 .search-result {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 200px;
 }
 
 .select-control {
-  min-width: 292px;
+  width: 292px;
   margin-right: 70px;
+  margin-left: auto;
   font-size: 18px;
   line-height: 21px;
   border-radius: 4px;
@@ -907,8 +908,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
-  margin-right: 70px;
   margin-bottom: 80px;
 }
 
@@ -1026,8 +1025,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
-  margin-right: 70px;
   margin-bottom: 60px;
 }
 
