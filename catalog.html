@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>City of Sedona</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="images/decor/favicon.ico" rel="icon">
+    <link href="images/decor/favicon.png" type="image/png" rel="icon">
   </head>
 
   <body>
@@ -65,7 +67,7 @@
         <section class="hotel-selection">
           <h1 class="hotel-selection-header">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
-            <li class="breadcrumbs-item breadcrumbs-item-after">
+            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Возврат на главную</span>
               </a>
@@ -78,40 +80,58 @@
           <!-- Filter -->
 
           <form class="filter-container" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter infrastructure">
+            <fieldset class="filter ">
               <legend class="filter-header">Инфраструктура:</legend>
-              <label class="filter-item filter-list-item"><input type="checkbox" name="hotel-feature" checked
-                  value="pool">Бассейн</label>
-              <label class="filter-item filter-list-item"><input type="checkbox" name="hotel-feature" checked
-                  value="parking">Парковка</label>
-              <label class="filter-item filter-list-item"><input type="checkbox" name="hotel-feature"
-                  value="Wi-Fi">Wi-Fi</label>
+              <label class="filter-item">
+                <input type="checkbox" name="hotel-feature" class="input-checkbox" checked value="pool">
+                  <span class="infrastructure-label">Бассейн</span>
+                </label>
+              <label class="filter-item">
+                <input type="checkbox" name="hotel-feature" class="input-checkbox" checked value="parking">
+                  <span class="infrastructure-label">Парковка</span></label>
+              <label class="filter-item">
+                <input type="checkbox" name="hotel-feature" class="input-checkbox" value="Wi-Fi">
+                  <span class="infrastructure-label">Wi-Fi</span></label>
             </fieldset>
             <fieldset class="filter accomodation-type">
               <legend class="filter-header">Тип жилья:</legend>
-              <label class="filter-item filter-list-item"><input type="radio" name="accomodation-type" checked
-                  value="hotel">Гостиница</label>
-              <label class="filter-item filter-list-item"><input type="radio" name="accomodation-type"
-                  value="motel">Мотель</label>
-              <label class="filter-item filter-list-item"><input type="radio" name="accomodation-type"
-                  value="appartments">Апартаменты</label>
+              <label class="filter-item">
+                <input type="radio" name="accomodation-type" checked
+                  value="hotel" class="input-radio">Гостиница</span>
+                  </label>
+              <label class="filter-item">
+                <input type="radio" name="accomodation-type"
+                  value="motel" class="input-radio">Мотель</span>
+                </label>
+              <label class="filter-item">
+                <input type="radio" name="accomodation-type"
+                  value="appartments" class="input-radio">Апартаменты</span>
+                </label>
             </fieldset>
             <fieldset class="filter filter-price">
               <legend class="filter-header">Стоимость,<span> ₽</span></legend>
+              <div class="range-container">
               <div class="filter-price-container">
-                <label class="filter-item filter-item-price">
+                <label class="filter-item">
                   <span class="placeholder">от</span>
                   <input class="price-value price-value-from" type="text" placeholder="от" value="0">
                 </label>
-                <label class="filter-item filter-item-price">
+                <label class="filter-item">
                   <span class="placeholder">до</span>
                   <input class="price-value price-value-to" type="text" placeholder="до" value="9000">
                 </label>
               </div>
-              <label class="">
-                <input class="filter-price-range" type="range" name="filter-price-range" min="0" max="9000"
-                  value="7000">
-              </label>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="toggler toggler-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="toggler toggler-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             </fieldset>
             <div class="filter filter-buttons">
               <button type="button" class="button submit-button">Применить</button>
