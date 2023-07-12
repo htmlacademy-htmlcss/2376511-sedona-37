@@ -593,7 +593,7 @@ body {
   line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .subsc-button:hover,
@@ -808,22 +808,22 @@ display:block;
 }
 
 .price-value-from {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .price-value-from:focus {
   outline:0;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: 3px solid #83B3D3;
 }
 
 .price-value-to {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .price-value-to:focus {
   outline:0;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border: 3px solid #83B3D3;
 }
 
@@ -1217,7 +1217,7 @@ display:block;
   padding: 64px 70px;
   border-radius: 30px;
   background-color: #FFFFFF;
-  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-form {
@@ -1456,7 +1456,7 @@ opacity:0.3;
   width: 256px;
   border-radius: 10px;
   background-color: #333333;
-  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
