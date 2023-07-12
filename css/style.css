@@ -397,7 +397,7 @@ body {
   display: flex;
 }
 
-.reverse {
+.img-container-reverse {
   order: -1;
 }
 
@@ -743,7 +743,7 @@ body {
 .input-checkbox[type="checkbox"]:checked {
 background-image: url(../images/decor/tick.svg);
 background-repeat: no-repeat;
-background-size: 18px 18px;
+background-size: 17px 17px;
 background-position: center top 1px;
 }
 
@@ -772,7 +772,7 @@ background-position: center top 1px;
 .input-radio[type="radio"]:checked {
   background-image: url(../images/decor/radio.svg);
   background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-size: 17px 17px;
   background-position: center top 1px;
   }
 
@@ -1037,6 +1037,12 @@ display:block;
   background-color: #82B3D3;
 }
 
+.hotel-img {
+  max-width:100%;
+  height:auto;
+  object-fit: contain;
+}
+
 .hotel-name {
   font-weight: 700;
   font-size: 24px;
@@ -1093,13 +1099,17 @@ display:block;
   background-color: #6C9E42;
 }
 
+.hotel-stars {
+  padding-top: 10px;
+}
+
 .hotel-stars::before {
   content: '';
   display: block;
+  background-image: url(../images/decor/star.svg);
   background-repeat: space no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url(../images/decor/star.svg);
   height: 17px;
 }
 
@@ -1299,11 +1309,17 @@ display:block;
   cursor:pointer;
 }
 
+.check-in-date:hover,
+.check-out-date:hover {
+background-color: #E6E6E6;
+}
+
 .check-in-date:focus,
 .check-out-date:focus {
   border:none;
   outline: 3px solid #83B3D3;
   outline-offset: 0;
+  background-color: #E6E6E6;
 }
 
 .check-in-error {
@@ -1415,6 +1431,7 @@ display:block;
   appearance: none;
   border:none;
   background-color: #F2F2F2;
+  outline:none;
 }
 
 .count-minus {
@@ -1429,19 +1446,25 @@ display:block;
 opacity:0.3;
 }
 
-.plus-image:hover,
-.minus-image:hover {
+.count-minus:hover .minus-image,
+.count-plus:hover .plus-image {
   opacity:1;
-  fill:black;
+  fill:black
 }
 
-.count-plus:focus,
-.count-minus:focus {
+.count-plus:focus .plus-image,
+.count-minus:focus .minus-image {
   opacity:1;
   fill:black;
-  outline:none;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
+  outline-offset: 2px;
   border-radius: 4px;
+}
+
+.count-plus:active .plus-image,
+.count-minus:active .minus-image {
+  opacity:0.3;
+  outline: none;
 }
 
 .people-number {
@@ -1456,7 +1479,6 @@ opacity:0.3;
   background-color: #F2F2F2;
   text-align: center;
 }
-
 
 .modal-search-button {
   font-size: 20px;
@@ -1473,6 +1495,7 @@ opacity:0.3;
   text-align: center;
   cursor: pointer;
   display:inline-block;
+  outline: none;
 }
 
 .modal-search-button:hover,
