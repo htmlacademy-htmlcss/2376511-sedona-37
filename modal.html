@@ -17,7 +17,7 @@
       <header class="main-header">
         <nav class="navigation">
           <a class="navigation-logo">
-            <img src="images/sedonalogo.svg" width="140" height="70" alt="Логотип сайта Седона." >
+            <img src="images/sedonalogo.svg" alt="Логотип сайта Седона." width="140" height="70">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -33,7 +33,7 @@
           <ul class="navigation-list nav-buttons">
             <li class="navigation-item-button">
               <a class="navigation-link-search" href="#">
-                <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
                   fill="none">
                   <path fill="#000"
                     d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
@@ -43,7 +43,7 @@
             </li>
             <li class="navigation-item-button">
               <a class="navigation-link-favourite" href="#">
-                <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
                   fill="none">
                   <path fill="#000"
                     d="M8.9 17a.9.9 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
@@ -53,7 +53,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <button class="button wish-button" type="button">Хочу Сюда
+              <button type="button" class="button wish-button">Хочу Сюда
                 <span class="visually-hidden">Подать заявку</span>
               </button>
             </li>
@@ -67,7 +67,7 @@
         <section class="hero">
           <h1 class="visually-hidden"> Добро пожаловать в Седону</h1>
           <img class="background-img" src="images/welcometext.svg"
-            width="458" height="352" alt="Надоел Гранд каньон - Добро пожаловать в Седону.">
+            alt="Надоел Гранд каньон - Добро пожаловать в Седону." width="458" height="352">
         </section>
 
         <!-- Advantages -->
@@ -87,7 +87,10 @@
                   течёт своя
                   жизнь</p>
               </div>
-                <img class="advantage-image" src="images/features/photo1.jpg" width="800" height="385" alt="Пейзаж города Седоны." >
+              <div class="img-container">
+                <img class="advantage-image" src="images/features/photo1.jpg" alt="Пейзаж города Седоны." width="800"
+                  height="385">
+              </div>
             </li>
             <li class="advantage-item advantage-corner-block">
               <h3 class="advantage-item-header header-underline">Небольшая площадь</h3>
@@ -108,8 +111,9 @@
                   осмелитесь,
                   разумеется</p>
               </div>
-              <div class="img-container-reverse">
-                <img class="advantage-image" src="images/features/photo2.jpg" width="800" height="385" alt="Вид на мост Дьявола издалека.">
+              <div class="img-container reverse">
+                <img class="advantage-image" src="images/features/photo2.jpg" alt="Вид на мост Дьявола издалека."
+                  width="800" height="385">
               </div>
             </li>
           </ul>
@@ -148,7 +152,7 @@
             <span> и мы покажем вам лучшие
               предложения гостиниц в Седоне</span>
           </p>
-          <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
+          <button class="button search-button">Поиск гостиницы в Седоне</button>
         </section>
 
         <!-- Subscribe -->
@@ -157,7 +161,8 @@
           <h2 class="subsc-header"> Подпишитесь на рассылку</h2>
           <p class="subsc-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="text-input-field" type="email" name="index-email" placeholder="Ваш e-mail" id="index-email-field" required>
+            <input class="text-input-field" type="text" name="index-email" placeholder="Ваш e-mail"
+              id="index-email-field">
             <button class="button subsc-button" type="submit">Подписаться</button>
           </form>
         </div>
@@ -169,7 +174,7 @@
         <ul class="social">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
-              <svg class="footer-social-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+              <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="25" height="14" fill="none" viewBox="0 0 25 14">
                 <path
                   d="M24 1c.1-.6 0-1-.8-1h-2.7c-.6 0-1 .3-1.1.7C19.4.7 18 4 16.2 6c-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7V.9c0-.6-.2-.9-.7-.9H9.7c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V7c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9C4.9.3 4.7 0 4 0H1.4C.6 0 .5.3.5.7c0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7C19.6 13.2 20 14 21 14h2.6c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L20.4 8c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"
@@ -180,7 +185,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="https://t.me/htmlacademy">
-              <svg class="footer-social-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+              <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="19" height="16" fill="none" viewBox="0 0 19 16">
                 <path
                   d="m17.3.1-16 6.1c-1 .5-1 1-.2 1.4l4.1 1.2 9.5-6c.5-.2.9 0 .5.2l-7.6 7-.3 4.2c.4 0 .6-.2.8-.4l2-2 4.1 3c.8.5 1.3.3 1.5-.6l2.7-12.8C18.7.3 18-.2 17.3 0Z" />
@@ -190,7 +195,7 @@
           </li>
           <li class="social-item">
             <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="footer-social-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+              <svg class="footer-social-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="23" height="18" fill="none" viewBox="0 0 23 18">
                 <path
                   d="M19.1.5H3.7C1.8.5.5 2.1.5 3.9v10c0 2 1.3 3.6 3.2 3.6h15.6c1.7 0 3.2-1.6 3.2-3.4V3.9C22.3 2.1 21 .5 19.1.5ZM8.1 13V5l7.4 4-7.3 4Z" />
@@ -204,7 +209,7 @@
         </div>
         <div class="devlogo-container">
           <a class="devlogo" href="https://htmlacademy.ru/">
-            <svg class="devlogo-svg" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="115"
+            <svg class="devlogo-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115"
               height="34" fill="none" viewBox="0 0 115 34">
               <path
                 d="M0 13.7v2.6h2.5v-2.6H0ZM11.6 5.3C10 5.3 8.8 6 8 7h-.1V.8h-2v15.5h2V11c0-2 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6c.1-3-1.8-5-4.5-5ZM26.6 5.6h-4.8V2h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1V7.5h4.8v-2ZM41.1 5.4c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.7-3.1 1.7h-.1V5.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.7c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.5c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1V.7h-2v12.7ZM28.9 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6S21.9 30 25 30c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM25.3 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.4 3.6-3.6 3.6ZM44.2 22.8c-.5-2.4-2.6-4-5.4-4a5.4 5.4 0 0 0-5.6 5.5c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM51.5 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.5 3.6-3.6 3.6ZM68.7 20.6a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V14.2h-2v6.4ZM65.1 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.7a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 2c1.7 0 3 1 3.3 2.5h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.7a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8V19h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V24c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.8l-3.6-8.9h-2.2l4.8 11.6c-.3 1-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 9Z" />
@@ -212,6 +217,68 @@
           </a>
         </div>
       </footer>
+      <section class="modal-container">
+        <div class="modal-window">
+          <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <button type="button" class="modal-close-button"></button>
+            <label class="check-in-row">
+              <span class="checkin-title">Дата заезда:</span>
+              <input type="text" class="check-in-date" id="check-in-date" value="27 апреля 2020" name="check-in-date"
+                placeholder="Укажите дату">
+              <span class="check-in-error">Мы не можем отправить вас в прошлое.</span>
+            </label>
+            <label class="check-out-row">
+              <span class="checkout-title">Дата выезда:</span>
+              <input type="text" class="check-out-date" id="check-out-date" value="1 сентября 2023"
+                name="check-out-date" placeholder="Укажите дату">
+              <span class="check-out-text">На эти даты есть свободные номера. Пока есть.</span>
+            </label>
+            <div class="count-container">
+              <label class="adult people-count" for="adult-number">Взрослые:</label>
+              <button class="count-minus" type="button">
+                <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка уменьшения колличества детей</span>
+              </button>
+              <input type="number" class="persons-number" id="adult-number" value="2" name="child-number" min="1"
+                max="10">
+              <button class="count-plus" type="button">
+                <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка увеличения колличества детей</span>
+              </button>
+              <label class="child people-count" for="child-number">Дети:</label>
+              <span class="tooltip">
+                <button type="button" class="tooltip-toggle"></button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <button class="count-minus" type="button">
+                <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка уменьшения колличества детей</span>
+              </button>
+              <input type="number" class="persons-number" id="child-number" value="2" name="child-number" min="1"
+                max="10">
+              <button class="count-plus" type="button">
+                <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                  <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка увеличения колличества детей</span>
+              </button>
+            </div>
+            <button type="button" class="modal-search-button">Найти</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 
