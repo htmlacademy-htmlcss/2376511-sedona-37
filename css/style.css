@@ -1265,11 +1265,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
 .modal-window {
   position: relative;
   width: 717px;
+  min-height: 576px;
   padding: 64px 70px;
   border-radius: 30px;
   background-color: #FFF;
@@ -1398,6 +1400,7 @@ body {
 
 .count-container {
   display: flex;
+  width: 577px;
 }
 
 .people-count {
@@ -1436,6 +1439,10 @@ body {
 .count-plus {
   margin-right: 88px;
   border-radius: 0 4px 4px 0;
+}
+
+.count-plus-right {
+  margin-right:0;
 }
 
 .count-minus {
