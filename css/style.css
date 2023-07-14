@@ -1264,7 +1264,6 @@ body {
   background-color: rgba(242, 242, 242, 0.80);
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: auto;
 }
 
@@ -1272,6 +1271,7 @@ body {
   position: relative;
   width: 717px;
   min-height: 576px;
+  margin: 396px 282px auto;
   padding: 64px 70px;
   border-radius: 30px;
   background-color: #FFF;
