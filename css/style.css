@@ -1354,7 +1354,7 @@ color: rgba(0, 0, 0, 0.30);
   width: 717px;
   min-height: 576px;
   margin: auto;
-  padding: 64px 70px;
+  padding: 65px 70px;
   border-radius: 30px;
   background-color: #FFF;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1368,9 +1368,9 @@ color: rgba(0, 0, 0, 0.30);
 
 .modal-header {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 32px;
   text-transform: uppercase;
   color: #000;
 }
@@ -1482,17 +1482,21 @@ color: rgba(0, 0, 0, 0.30);
   line-height: 21px;
 }
 
-.count-container {
+.counters-container {
   display: flex;
   flex-wrap: wrap;
   width: 577px;
   margin-bottom: 25px;
 }
 
-.people-count {
+.adult-count-container,
+.child-count-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.people-count {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
@@ -1583,8 +1587,8 @@ color: rgba(0, 0, 0, 0.30);
 
 .tooltip-toggle {
   position: absolute;
-  top: 10px;
-  left: -72px;
+  top: -13px;
+  left: -71px;
   display: block;
   width: 26px;
   height: 26px;
@@ -1610,12 +1614,12 @@ color: rgba(0, 0, 0, 0.30);
 
 .tooltip-text {
   position: absolute;
-  top: 52px;
-  right: -70px;
+  top: 29px;
+  right: -71px;
   z-index: 1;
   display: none;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 15px 18px 20px 22px;
   border-radius: 10px;
   background-color: #333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
