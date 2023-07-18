@@ -833,6 +833,7 @@ color: rgba(0, 0, 0, 0.30);
 .filter-price {
   margin-left:auto;
   max-width:288px;
+  gap: 15px;
 }
 
 .filter-price-container {
