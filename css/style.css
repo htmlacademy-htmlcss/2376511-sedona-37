@@ -1492,8 +1492,15 @@ color: rgba(0, 0, 0, 0.30);
 .adult-count-container,
 .child-count-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+}
+
+.adult-count-container {
+  width:247px;
+}
+
+.child-count-container {
+  width: 242px;
 }
 
 .people-count {
