@@ -18,7 +18,7 @@
       <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo">
-            <img src="images/sedonalogo.svg" width="140" height="70" alt="Логотип сайта Седона." >
+            <img src="images/sedona_logo.svg" width="140" height="70" alt="Логотип сайта Седона." >
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -65,7 +65,7 @@
 
         <section class="hero" data-test="hero">
           <h1 class="visually-hidden"> Добро пожаловать в Седону</h1>
-          <img class="background-img" src="images/welcometext.svg"
+          <img class="background-img" src="images/welcome_text.svg"
             width="458" height="352" alt="Надоел Гранд каньон - Добро пожаловать в Седону.">
         </section>
 
@@ -209,6 +209,72 @@
           </a>
         </div>
       </footer>
+      <section class="modal-container">
+        <div class="modal-window" data-test="modal">
+          <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="modal-close-button" type="button"></button>
+            <label class="check-in-row">
+              <span class="checkin-title">Дата заезда:</span>
+              <input class="check-in-date" type="text" id="check-in-date" value="27 апреля 2020" name="check-in-date"
+                placeholder="Укажите дату">
+              <span class="check-in-error">Мы не можем отправить вас в прошлое.</span>
+            </label>
+            <label class="check-out-row">
+              <span class="checkout-title">Дата выезда:</span>
+              <input class="check-out-date" type="text" id="check-out-date" value="1 сентября 2023"
+                name="check-out-date" placeholder="Укажите дату">
+              <span class="check-out-text">На эти даты есть свободные номера. Пока есть.</span>
+            </label>
+            <div class="counters-container">
+              <div class="adult-count-container">
+                <label class="adult people-count" for="adult-number">Взрослые:</label>
+                <button class="count-minus" type="button">
+                  <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                    <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка уменьшения колличества детей</span>
+                </button>
+                <input class="persons-number" type="number" id="adult-number" value="2" name="adult-number" min="1"
+                  max="9">
+                <button class="count-plus" type="button">
+                  <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка увеличения колличества детей</span>
+                </button>
+              </div>
+              <div class="child-count-container">
+                <label class="child people-count" for="child-number">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button"></button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <button class="count-minus" type="button">
+                  <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                    <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка уменьшения колличества детей</span>
+                </button>
+                <input class="persons-number" type="number" id="child-number" value="2" name="child-number" min="0"
+                  max="9">
+                <button class="count-plus count-plus-right" type="button">
+                  <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка увеличения колличества детей</span>
+                </button>
+              </div>
+            </div>
+            <button class="modal-search-button" type="submit">Найти</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 
