@@ -1619,13 +1619,13 @@ body {
 .count-minus:hover .minus-image,
 .count-plus:hover .plus-image {
   opacity: 1;
-  fill: black;
+  fill: #000000;
 }
 
 .count-plus:focus-within .plus-image,
 .count-minus:focus-within .minus-image {
   opacity: 1;
-  fill: black;
+  fill: #000000;
   outline: 3px solid #82b3d3;
   outline-offset: 2px;
   border-radius: 4px;
