@@ -328,7 +328,7 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
+  border: none;
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
@@ -671,7 +671,7 @@ body {
   min-width: 452px;
   max-width: 100%;
   padding: 12px 20px;
-  border: 0;
+  border: none;
   font-family: inherit;
   background-color: #f2f2f2;
   font-size: 18px;
@@ -893,7 +893,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  border: 3px solid transparent;
+  border: 3px solid #00000000;
   background-color: #f2f2f2;
   flex-shrink: 0;
 }
@@ -1003,7 +1003,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: transparent;
+  background-color: #00000000;
 }
 
 .reset-button:hover {
@@ -1022,7 +1022,7 @@ body {
 }
 
 .reset-button:disabled {
-  background-color: transparent;
+  background-color: #00000000;
   color: rgba(255, 255, 255, 0.1);
 }
 
